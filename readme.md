@@ -9,7 +9,7 @@ An active branch is always highlighted.
 
 You need [npm](https://docs.npmjs.com/getting-started/installing-node), [bower](http://bower.io/#install-bower) and [gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) to run the app.
 
-Run `$ npm install`, `$ bower install`, `gulp serve` and you're good.
+Run `$ npm install`, `$ bower install`, `$ gulp serve` and you're good.
 
 Sorry for a ton (~160mb) of files. That's the price we'll have to pay for using Yoeman.
 
