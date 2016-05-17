@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('dynamicFolderApp', ['ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngMaterial', 'toastr']);
+    .module('dynamicFolderApp', ['ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngMaterial' ]);
 
 })();

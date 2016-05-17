@@ -19,23 +19,26 @@
     <!-- endinject -->
     <!-- endbuild -->
   </head>
-  <body>
+  <body style="padding-top: 70px;">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <div ng-controller="MainController as vm">
 
-      <md-content>
+      <md-content layout="row" layout-align="center center">
 
-        <ul layout="column">
+        <ul class="no-padding"
+              flex="95"
+              flex-sm="80"
+              flex-gt-sm="65"
+              flex-gt-md="55">
           <!--
             COMMENT: recursively calling node template
             to achieve unlimited depth of the tree
           -->
           <li ng-repeat="node in vm.tree"
-            layout="column"
-            ng-include="'app/components/templates/node.tpl.html'">
+            ng-include="'app/main/partials/node.tpl.html'">
           </li>
         </ul>
 

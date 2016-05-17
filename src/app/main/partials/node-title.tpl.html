@@ -1,0 +1,33 @@
+<div class="node-title-outter" layout="row">
+  <div class="node-title"
+        ng-class="{ 'node-clickable': node.children }"
+        ng-click="node.expand = !node.expand; vm.activeNode = $id"
+        ng-focus="vm.activeNode = $id">
+
+    <span ng-if="node.children">
+      <md-icon ng-if="! node.expand" class="material-icons">folder</md-icon>
+      <md-icon ng-if="node.expand" class="material-icons">folder_open</md-icon>
+    </span>
+
+    <span ng-if="! node.children"></span>
+
+    <span ng-class="{'active-node': $id === vm.activeNode }">
+      {{ node.name }}
+    </span>
+
+  </div>
+
+  <!-- Icon to add child nodes -->
+  <md-icon ng-if="! node.showAddChildForm"
+            class="material-icons"
+            ng-click="node.showAddChildForm = ! node.showAddChildForm"
+            style="align-self: flex-end;">
+            create_new_folder
+  </md-icon>
+  <md-icon ng-if="node.showAddChildForm"
+            class="material-icons"
+            ng-click="node.showAddChildForm = ! node.showAddChildForm"
+            style="align-self: flex-end;">
+            backspace
+  </md-icon>
+</div>

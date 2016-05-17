@@ -9,6 +9,10 @@
     vm.tree = TREE;
     vm.addChildNode = addChildNode;
 
+    vm.add = function() {
+      $log.info('add');
+    }
+
     function addChildNode(node) {
       var newNode = {
         name: node.newNode
@@ -16,6 +20,9 @@
 
       // Clear input
       node.newNode = '';
+
+      // Hide form
+      node.showAddChildForm = false;
 
       // Expand node to display new item
       node.expand = node.expand || true;
@@ -25,7 +32,7 @@
       return node.children ?
               node.children.push(newNode) :
               node.children = [ newNode ];
-    };
+    }
 
   }
 

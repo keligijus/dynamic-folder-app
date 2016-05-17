@@ -1,0 +1,17 @@
+<form layout-align="flex-start"
+        name="addChildNode{{$id}}"
+        ng-submit="vm.addChildNode(node)">
+  <div layout="row" flex>
+    <md-input-container flex class="md-icon-float md-block md-title">
+      <label>Add child node</label>
+      <input type="text"
+              ng-focus="vm.activeNode = $id"
+              ng-model="node.newNode">
+    </md-input-container>
+    <div>
+      <md-button>
+        Add
+      </md-button>
+    </div>
+  </div>
+</form>

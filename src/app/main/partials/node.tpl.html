@@ -1,0 +1,18 @@
+<div ng-class="{'active-container': $id === vm.activeNode }">
+
+  <!-- Node Title/Controlls -->
+  <ng-include src="'app/main/partials/node-title.tpl.html'"></ng-include>
+
+  <!-- Display form to add Child folders -->
+  <ng-include ng-if="node.showAddChildForm"
+    src="'app/main/partials/add-child-nodes-form.tpl.html'"></ng-include>
+
+  <!-- Recursive list -->
+  <ul layout-align="start"
+            ng-if="node.children &amp;&amp; node.expand">
+    <li ng-repeat="node in node.children"
+      ng-include="'app/main/partials/node.tpl.html'">
+    </li>
+  </ul>
+
+</div>
