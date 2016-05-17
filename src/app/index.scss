@@ -40,6 +40,11 @@ ul {
   border-radius: 3px;
 }
 
+.add-child-node-icon {
+  align-self: flex-end;
+  cursor: pointer
+}
+
 
 /**
  *  Do not remove the comment below. It's the markers used by gulp-inject to inject
