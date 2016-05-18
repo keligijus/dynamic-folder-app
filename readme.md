@@ -11,12 +11,14 @@ You need [npm](https://docs.npmjs.com/getting-started/installing-node), [bower](
 
 Run `$ npm install`, `$ bower install`, `$ gulp serve` and you're good.
 
-Sorry for a ton (~160mb) of files. That's the price we'll have to pay for using Yoeman.
+Sorry for a ton (~160mb) of files. That's the price we'll have to pay for using a Yoeman generator.
 
 ##Choices & Decisions
 
 I've used a [Gulp Angular Generator](https://github.com/Swiip/generator-gulp-angular) for rapid development.
 
 Angular is perfect for this kind of task as it allows a lot of tasks to be done directly in HTML.
+
+[Angular Material](https://material.angularjs.org/latest/) to take care of visual styling and layout.
 
 The app calls a template of a tree node recursively. This way it's possible to achieve virtually unlimited depth of the folder tree.
